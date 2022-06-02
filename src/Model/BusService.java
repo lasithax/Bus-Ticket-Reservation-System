@@ -134,27 +134,6 @@ public class BusService {
                         currNod=currNod.next;
                    }
         }
-        
-        public boolean deleteByKey(int busNumber){
-            if(head.busNumber==busNumber){
-                head=head.next;
-            }
-            else{
-                Bus currentNode=head.next;
-                while(currentNode!=null){
-                    if (currentNode.busNumber==busNumber){
-
-                        return true;
-                    }
-                    else{
-                        currentNode = currentNode.next;
-                    }
-                }
-                
-            }
-            Bus currentNode=head;
-            return false; 
-        }
 }
 
 
